@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(./images/2.jpg) no-repeat top center/cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="./images/1.jpg" alt="">
+    <script>
+        function getRandom(n,m){
+        return Math.floor(Math.random() * (m -n +1)) +n
+        }
+ /*        //获取
+        const img = document.querySelector('img')
+        //随机
+        const random = getRandom(1,6)
+        //
+        img.src =`./images/${random}.jpg`
+    */
+     const random = getRandom(1,6)
+     document.body.style.backgroundImage = `url(./images/${random}.jpg) no-repeat top center/cover`
+        
+    </script>
+      
+</body>
+</html>

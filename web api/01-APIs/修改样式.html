@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(21, 217, 239);
+        }
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(247, 49, 49);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+         const div = document.querySelector('div')
+         //修改样式 第一种
+        //  div.style.width = '50px'
+        //  div.style.backgroundColor= 'green'
+        //  div.style.border = '5px solid black'
+        //  div.style.borderTop = '10px solid black'
+        // box.style.paddingLeft = '50px'
+        //修改样式 第二种
+        // div.className = 'box'
+
+        //第三种 classList
+        // add 添加 
+        //remove 删除
+        //toggle 切换
+        div.classList.add('box')
+        div.classList.remove('box')
+        div.classList.toggle('box')
+         
+    </script>
+</body>
+</html>

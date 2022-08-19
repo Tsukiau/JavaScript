@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num = prompt("请输入总人数：");
+        var sum = 0;
+        var ave = 0;
+        for(var i = 1; i <= num; i++){
+            var s = prompt("请输入第" + i +"个学生成绩");
+            sum = sum + parseInt(s);
+        }
+        ave = sum / num;
+        alert("总成绩：" + sum);
+        alert("平均：" + ave);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
